@@ -1,73 +1,76 @@
 # enPDF2zhMD
 
-英文PDF自动转换为中文Markdown工具
+<div align="center">
+  <a href="README.md"><img src="https://img.shields.io/badge/Language-English-blue" alt="English"></a>
+  <a href="README_zh.md"><img src="https://img.shields.io/badge/语言-中文-red" alt="中文"></a>
+</div>
 
-## 项目介绍
+A tool for converting English PDF documents to Chinese Markdown.
 
-enPDF2zhMD是一个桌面应用程序，可以将英文PDF文档自动转换为中文Markdown文本，同时保留原始文档的格式和图片。
+## Introduction
 
-主要功能：
-- 自动解析英文PDF文档结构
-- 提取并保存图片资源
-- 使用AI接口翻译为中文
-- 保留原始格式（标题、列表、表格、代码块等）
-- 输出为Markdown文档或压缩包
+enPDF2zhMD is a desktop application that automatically converts English PDF documents into Chinese Markdown text while preserving the original document's format and images.
 
-## 安装使用
+Key features:
+- Automatic parsing of English PDF document structure
+- Extraction and saving of image resources
+- Translation to Chinese using AI API
+- Preservation of original formatting (headings, lists, tables, code blocks, etc.)
+- Output as Markdown document or compressed package
 
-### 依赖项
+## Installation and Usage
 
-- Python 3.10+
-- PyQt5
-- marker-pdf
-- requests
+### Installation Steps
 
-### 安装步骤
-
-1. 克隆仓库
+1. Clone the repository
 ```bash
-git clone https://github.com/your-username/enPDF2zhMD.git
+git clone https://github.com/LFF8888/enPDF2zhMD.git
 cd enPDF2zhMD
 ```
 
-2. 安装依赖
+2. Install dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-3. 运行应用
+3. Run the application
 ```bash
 python main.py
 ```
 
-### 使用方法
+### Usage Instructions
 
-1. 点击"选择PDF文件"按钮，选择要转换的英文PDF文档
-2. 可选：点击"设置"按钮，配置API参数和转换选项
-3. 点击"开始转换"按钮开始处理
-4. 转换完成后，可以在输出位置找到转换结果
+1. Click the "Select PDF File" button to choose the English PDF document to convert
+2. Optional: Click the "Settings" button to configure API parameters and conversion options
+3. Click the "Start Conversion" button to begin processing
+4. After conversion is complete, you can find the conversion result at the output location
 
-## 配置说明
+## Configuration 
 
-首次运行时，请在"设置"中配置以下参数：
+When running for the first time, please configure the following parameters in "Settings":
 
-- API URL: 翻译服务的API地址，默认为https://api.tu-zi.com
-- API密钥: 从服务提供商获取的密钥
-- 模型: 使用的AI模型，默认为claude-3-7-sonnet-thinking
+- API URL: The API address of the translation service, default is https://api.tu-zi.com
+- API Key: The key obtained from the service provider (via website)
+- Model: The AI model used, recommended to use grok-beta
 
-## 技术架构
+## API Invitation Link
 
-本项目使用以下技术：
+This is the author's API invitation link. When you invite friends to register, the author receives $0.5 credit and your friend receives $1 credit.
+https://api.tu-zi.com/register?aff=HyTx
 
-- 核心功能: PDF解析、AI翻译、资源管理
-- 界面: PyQt5构建的现代GUI
-- PDF处理: Marker-PDF库
-- 翻译: OpenAI兼容API接口
+## Technical Architecture
 
-## 贡献代码
+This project uses the following technologies:
 
-欢迎提交Issues和Pull Requests。
+- Core functionality: PDF parsing, AI translation, resource management
+- Interface: Modern GUI built with PyQt5
+- PDF processing: Marker-PDF library
+- Translation: OpenAI compatible API interface
 
-## 许可证
+## Contribution
+
+Issues and Pull Requests are welcome.
+
+## License
 
 MIT License
